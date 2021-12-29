@@ -1,8 +1,9 @@
-#Coding Dojo Python Stack
+# Coding Dojo Python Stack
 
-##Major Sections
--[]Python
--[]Flask
--[]Ajax
--[]MySQL
--[]Danjo
+## Major Sections
+
+- [ ] Python
+- [ ] Flask
+- [ ] Ajax
+- [ ] MySQL
+- [ ] Danjo
