@@ -48,6 +48,31 @@ class SList:
             previousVal.next = None
             del nextValue
         return self
+
+    def remove_val(self, value):
+        prevVal = self.header
+        nextVal = prevVal.next
+
+        #if the value is in the header
+        if prevVal.value == value:
+            self.header = nextVal
+            del prevVal
+            return self
+
+
+        
+        while nextVal.value != value and nextVal.next != None:
+            prevVal = nextVal
+            nextVal = prevVal.next
+        
+        if nextVal.value == value:
+            prevVal.next = nextVal.next
+            del nextVal
+            return self
+        else:
+            print('Value not found')
+            return self
+
     
     def insert_at(self,value, n ):
         
@@ -86,6 +111,6 @@ new_list.add_to_front(0)
 new_list.add_to_front("the front")
 new_list.add_to_back("I am at the back")
 new_list.print_values()
-print('\n')
-new_list.insert_at("new",4)
+print("\n")
+new_list.remove_val("the")
 new_list.print_values()
