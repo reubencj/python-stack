@@ -1,15 +1,15 @@
--- use dojos_and_ninjas_schema;
+use dojos_and_ninjas_schema;
 
--- insert into dojos (name) values('New York');
--- insert into dojos (name) values('San Jose');
--- insert into dojos (name) values('Seattle');
+insert into dojos (name) values('New York');
+insert into dojos (name) values('San Jose');
+insert into dojos (name) values('Seattle');
 
 
--- delete from dojos;
+delete from dojos;
 
--- insert into dojos (name) values('New York');
--- insert into dojos (name) values('San Jose');
--- insert into dojos (name) values('Seattle');
+insert into dojos (name) values('New York');
+insert into dojos (name) values('San Jose');
+insert into dojos (name) values('Seattle');
 
 
 insert into ninjas(first_name, last_name, age, dojo_id) values('reuben','john',32,4);
