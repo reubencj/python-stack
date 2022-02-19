@@ -21,3 +21,8 @@ class Friend:
             friends.append(cls(friend))
         
         return friends
+    
+    @classmethod
+    def save(cls,data):
+        query = "INSERT INTO friends (first_name, last_name, occupation) VALUES(%(first_name)s,%(last_name)s,%(occupation)s);"
+        return connectToMySQL('first_flask').query_db(query,data)
