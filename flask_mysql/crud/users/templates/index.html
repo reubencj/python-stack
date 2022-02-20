@@ -20,6 +20,7 @@
             <th>Last Name</th>
             <th>email</th>
             <th>created at</th>
+            <th>Actions</th>
         </tr>
         </thead>
         <tbody>
@@ -39,6 +40,9 @@
                     </td>
                     <td>
                         {{user.created_at}}
+                    </td>
+                    <td>
+                        <a href="/users/{{user.id}}">show</a> | <a href="/users/{{user.id}}/edit">edit</a>| <a href="/users/{{user.id}}/delete">delete</a>
                     </td>
                 </tr>
 
