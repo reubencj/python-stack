@@ -52,6 +52,4 @@ class User:
 
 if __name__ == '__main__':
 
-    
-
     print(User.show_one_user({"id":1}))
